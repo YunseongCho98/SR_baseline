@@ -54,4 +54,4 @@ for epoch in range(1, epochs + 1):
     print(f"[Epoch {epoch}] Loss: {epoch_loss / len(dataloader):.6f}")
 
     if epoch % 10 == 0:
-        torch.save(model.state_dict(), f"edsr_epoch{epoch}.pth")
+        torch.save(model.state_dict(), f"sr_epoch{epoch}.pth")
